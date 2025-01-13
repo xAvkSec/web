@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1A1A1A;
+    color: #A9A9A9;
+    line-height: 1.6;
+}
+
+header {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h1 {
+    color: #00BFFF;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #A9A9A9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00BFFF;
+}
+
+.hero {
+    background: url('path/to/your/animation.gif') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: #00BFFF;
+    font-size: 3em;
+}
+
+.hero-content p {
+    color: #A9A9A9;
+    font-size: 1.5em;
+}
+
+.cta-button {
+    background: #00BFFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #008CBA;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.news-grid, .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+article, .resource-category {
+    background: #2A2A2A;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+article:hover, .resource-category:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #A9A9A9;
+    border-radius: 5px;
+    background: #2A2A2A;
+    color: #A9A9A9;
+}
+
+form button {
+    background: #00BFFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #008CBA;
+}
+
+#map {
+    height: 300px;
+    background: #2A2A2A; /* Placeholder for map */
+    margin-top: 20px;
+}

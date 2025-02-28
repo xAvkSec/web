@@ -230,23 +230,12 @@
     }
     
     /* Pricing Section */
-    .hosting {
+    .product {
       padding: 5rem 1rem;
       background-color: white;
     }
     
-    .hosting h2 {
-      text-align: center;
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-      margin-bottom: 3rem;
-    }
-
-    .course {
-      padding: 5rem 1rem;
-      background-color: white;
-    }
-    
-    .course h2 {
+    .product h2 {
       text-align: center;
       font-size: clamp(1.8rem, 4vw, 2.5rem);
       margin-bottom: 3rem;

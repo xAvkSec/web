@@ -1,287 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>NOVGREY - Cyber Security Community</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Cybersecurity community and secure hosting services" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script type="module" src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
-  </head>
-  <body>
-    <nav>
-      <div class="nav-content">
-        <div class="logo">
-          <img src="assets/images/logo.png" alt="NOVGREY Logo" class="logo-img">
-          <a href="#" style="text-decoration:none; color: var(--primary-color);">NOVGREY</a>
-        </div>
-        <div class="nav-links">
-          <a href="#home" aria-current="page">Home</a>
-          <a href="#community">Community</a>
-          <a href="#hosting">Hosting</a>
-          <a href="#course">Course</a>
-          <a href="#follow">Follow</a>
-          <a href="#tools" onclick="alert('soon...')">Tools</a>
-        </div>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHIMS | Ethical Hacker & Bug Hunter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="terminal-toggle">
+        <i class="fas fa-terminal"></i>
+    </div>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
 
-    <header class="hero" id="home">
-      <div class="hero-content">
-        <h1>NOVREY COMMUNITY</h1>
-        <p>Cyber Security community in Indonesia focused on information and sharing to improve awareness and skills in combating digital security threats.</p>
-        <div class="cta-buttons">
-          
-          <a href="https://www.instagram.com/novgrey" class="btn btn-primary">Follow US</a>
-          <a href="#course" class="btn btn-secondary">View Course</a>
-        </div>
-      </div>
+    <header class="glitch-container">
+        <h1 class="glitch" data-text="PHIMS">PHIMS</h1>
+        <p class="tagline">Ethical Hacker | Bug Hunter | Penetration Tester</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-      <section class="community" id="community">
-        <h2>Community Activites</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <i class="fas fa-users"></i>
-            <h3>Expert Network</h3>
-            <p>Connect with cybersecurity professionals and developers from around the world. Share experiences, collaborate on projects, and grow together.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Knowledge Sharing</h3>
-            <p>Access exclusive security resources, workshops, and hands-on training materials created by industry experts.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-tools"></i>
-            <h3>Security Tools</h3>
-            <p>Get exclusive access to premium security tools, scripts, and custom-built solutions for penetration testing and security analysis.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-shield-virus"></i>
-            <h3>Threat Intel</h3>
-            <p>Stay ahead of cyber threats with our real-time threat intelligence feed and early warning system.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-project-diagram"></i>
-            <h3>Collaboration</h3>
-            <p>Work together on security projects, bug bounties, and open-source security tools.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-certificate"></i>
-            <h3>Certifications</h3>
-            <p>Access exclusive certification preparation resources and study groups.</p>
-          </div>    
-        </div>
-      </section>
+        <section id="home" class="section">
+            <div class="terminal-text">
+                <span class="prompt">$</span>
+                <span class="typing-text">Hello World! I'm PHIMS...</span>
+            </div>
+        </section>
 
-      <section class="product" id="hosting">
-        <h2>Hosting Solutions - Bot Whatsapp</h2>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Plan Basic</h3>
-              <div class="price">IDR 3.000<span>/mo</span></div>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/200" alt="PHIMS Profile">
+                </div>
+                <div class="about-text">
+                    <p>Seorang bug hunter yang bersemangat dalam menemukan celah keamanan dan membuat dunia digital lebih aman. Pendiri Team NovGrey dan pengembang tool keamanan siber.</p>
+                    <div class="experience-list">
+                        <ul>
+                            <li>Peserta Lomba CTF</li>
+                            <li>Peserta SQL Injection Challenge</li>
+                            <li>Pendiri Team NovGrey</li>
+                            <li>Pengembang dan penjual tool scanning vulnerability</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> 5GB RAM</li>
-              <li><i class="fas fa-check"></i> Unlimited CPU Cores</li>
-              <li><i class="fas fa-check"></i> Unlimited SSD Storage</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-          <div class="pricing-card featured">
-            <div class="pricing-header">
-              <h3>Plan Premium</h3>
-              <div class="price">IDR 7.000<span>/mo</span></div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> Unlimited RAM</li>
-              <li><i class="fas fa-check"></i> Unlimited CPU Cores</li>
-              <li><i class="fas fa-check"></i> Unlimited SSD Storage</li>
-              <li><i class="fas fa-check"></i> Free Bot Script</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Plan Business</h3>
-              <div class="price">IDR 10.000<span>/mo</span></div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> Private Server</li>
-              <li><i class="fas fa-check"></i> Extra Security</li>
-              <li><i class="fas fa-check"></i> Unlimited RAM</li>
-              <li><i class="fas fa-check"></i> Unlimited CPU Cores</li>
-              <li><i class="fas fa-check"></i> Unlimited SSD Storage</li>   
-              <li><i class="fas fa-check"></i> Free Bot Script</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-           <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Plan ???</h3>
-              <div class="price">IDR 0.000<span>/mo</span></div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> ???</li>
-              <li><i class="fas fa-check"></i> ???</li>
-              <li><i class="fas fa-check"></i> ???</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-           <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Plan Reseller</h3>
-              <div class="price">IDR 10.000<span>/mo</span></div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> Get Access To Whatsapp Bot</li>
-              <li><i class="fas fa-check"></i> Create Unlimited Panels</li>
-              <li><i class="fas fa-check"></i> Unlimited RAM</li>
-              <li><i class="fas fa-check"></i> Unlimited CPU Cores</li>
-              <li><i class="fas fa-check"></i> Unlimited SSD Storage</li>
-              <li><i class="fas fa-check"></i> Free Bot Script</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-           <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Plan ???</h3>
-              <div class="price">IDR 0.000<span>/mo</span></div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> ???</li>
-              <li><i class="fas fa-check"></i> ???</li>
-              <li><i class="fas fa-check"></i> ???</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="product" id="course">
-        <h2>Online Courses</h2>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Penetration Testing with Kali Linux</h3>
-              <div class="price">IDR 3.000.000</div>
+        <section id="projects" class="section">
+            <h2>Projects & Bug Reports</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>XSS </h3>
+                    <p>Menemukan dan melaporkan XSS di subdomain Komdigi dan Kominfo</p>
+                    <div class="tags">
+                        <span>#XSS</span>
+                        <span>#Bug Hunting</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>XSS </h3>
+                    <p>Menemukan XSS di subdomain TNI, tetapi ternyata sudah dilaporkan sebelumnya</p>
+                    <div class="tags">
+                        <span>#XSS</span>
+                        <span>#Bug Hunting</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>SQL Injection Research</h3>
+                    <p>Eksploitasi SQL Injection vulnerabilities</p>
+                    <div class="tags">
+                        <span>SQLi</span>
+                        <span>Research</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Security Tools</h3>
+                    <p>Mengambangkan tool automasi scanning vulnerability agar saat melakukan scanning menjadi mudah dan cepat, untuk informasi tool bisa hubungi saya</p>
+                    <div class="tags">
+                        <span>Tools</span>
+                        <span>Development</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Collaboration </h3>
+                    <p>Saat ini sedang bekerja sama dengan ekosistem property, saya sebagai admin, digital marketer dan tim IT security</p>
+                    <div class="tags">
+                        <span>Tools</span>
+                        <span>Development</span>
+                    </div>
+                </div>
             </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> Get a Certificate</li>
-              <li><i class="fas fa-check"></i> Hands-On Experience</li>
-              <li><i class="fas fa-check"></i> Comprehensive Methodology</li>
-              <li><i class="fas fa-check"></i> Master Vulnerability Analysis Techniques</li>
-              <li><i class="fas fa-check"></i> Lifetime Access</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-          <div class="pricing-card featured">
-            <div class="pricing-header">
-              <h3>Complete Ethical Hacking</h3>
-              <div class="price">IDR 5.000.000</div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> Get a Certificate</li>
-              <li><i class="fas fa-check"></i> Theoretical and Practical Learning</li>
-              <li><i class="fas fa-check"></i> Understanding Security Tools</li>
-              <li><i class="fas fa-check"></i> Career Advancement</li>
-              <li><i class="fas fa-check"></i> Lifetime Access</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3>Advanced Web Attacks and Exploitation</h3>
-              <div class="price">IDR 2.000.000</div>
-            </div>
-            <ul class="pricing-features">
-              <li><i class="fas fa-check"></i> Get a Certificate</li>
-              <li><i class="fas fa-check"></i> Identify Web Vulnerabilities</li>
-              <li><i class="fas fa-check"></i> Safe Exploitation Simulation</li>
-              <li><i class="fas fa-check"></i> Attack Mitigation Strategies</li>
-              <li><i class="fas fa-check"></i> Lifetime Access</li>
-            </ul>
-            <a href="https://wa.me/62882003684411" class="btn btn-primary">Buy</a>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="features">
-        <h2>Why Choose Our Hosting</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <i class="fas fa-lock"></i>
-            <h3>Security First</h3>
-            <p>Our infrastructure is built with security as the top priority. Every server is hardened and continuously monitored.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-shield-alt"></i>
-            <h3>Hardened Infrastructure</h3>
-            <p>Pre-configured security measures and continuous monitoring keep your applications safe.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-user-shield"></i>
-            <h3>Expert Support</h3>
-            <p>Our security professionals are available 24/7 to help with any security concerns or incidents.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-sync"></i>
-            <h3>Proactive Updates</h3>
-            <p>Stay protected with automatic security patches and proactive system updates.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-tachometer-alt"></i>
-            <h3>Performance Optimized</h3>
-            <p>Security doesn't mean sacrificing speed. Our servers are optimized for both security and performance.</p>
-          </div>
-          <div class="feature-card">
-            <i class="fas fa-database"></i>
-            <h3>Data Protection</h3>
-            <p>Your data is protected with enterprise-grade encryption and backup solutions.</p>
-          </div>
-        </div>
-      </section>
-      
-      <section class="follow-community" id="follow">
-        <div class="follow-content">
-          <h2>Follow Our Community</h2>
-          <p>Get access to <strong>Exclusive Content</strong> about learning <strong>Cyber Security</strong> and share together</p>
-          <a href="https://www.instagram.com/novgrey" class="btn btn-primary">Follow Now</a>
-          <a href="https://chat.whatsapp.com/G3rhWhRKtGRJlt4IiClZrq" class="btn btn-primary">Join Whatsapp Group Now</a>
-        </div>
-      </section>
+        <section id="skills" class="section">
+            <h2>Skills & Certifications</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>Web Penetration Testing</li>
+                            <li>Bug Hunting</li>
+                            <li>XSS Exploitation</li>
+                            <li>SQL Injection</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>CTF Competition</li>
+                            <li>SQL Challenge Certificate</li>
+                            <li>Fundamental Penetration Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact & Socials</h2>
+            <div class="contact-container">
+                <div class="social-links">
+                    <a href="https://instagram.com/aier_phims" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/phims403" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ahada-ibad-elrahman" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://hackerone.com/phims" class="social-link"><i class="fab fa-hackerone"></i></a>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <textarea placeholder="Your message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>NOVGREY Community</h3>
-          <p style="line-height: 1.5;"> Cyber Security Enthusiast Community in Indonesia focused on Information and Sharing to Improve Awareness and Skills in Combating Digital Security Threats.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/novgrey"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/6281215072764"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-        <div class="footer-section">
-          <h3>Contact Info</h3>
-          <a style="color: #ffffff;"href="mailto:contact@phims.tech"><i class="fas fa-envelope"></i> contact@phims.tech</a>
-          <a style="color: #ffffff;"href="https://wa.me/6281215072764"><i class="fas fa-phone"></i> +62 812-1507-2764</a>
-          <a style="color: #ffffff;"><i class="fas fa-map-marker-alt"></i> Jawa Tengah, Indonesia</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>Copyright &copy; 2025 NOVGREY Community. Developed By <a style="color: #00f0ff; text-decoration:none;" href="https://www.instagram.com/faiq.cybersec">@faiq.cybersec</a></p>
-      </div>
+        <p>&copy; 2025 PHIMS. All rights reserved.</p>
     </footer>
-  </body>
-</html>
+
+    <script src="script.js"></script>
+</body>
+</html> 

